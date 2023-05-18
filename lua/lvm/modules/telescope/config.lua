@@ -14,6 +14,7 @@ config.defaults.module_config = {
 		{ "<leader>;", "oldfiles_frecency", desc = "Show Recent Files (frecency)" },
 		{ "<leader>fr", "oldfiles", desc = "Show Recent Files" },
 		{ "<leader>sd", "diagnostics", desc = "Show Document Diagnostics" },
+		{ "<leader>dd", "diagnostics", desc = "Show Document Diagnostics" },
 		{ "<leader>sK", "keymaps", desc = "Show Keymaps" },
 		{ "<leader>sM", "man_pages", desc = "Show Man Pages" },
 		{ "<leader>sR", "resume", desc = "Resume" },
@@ -237,6 +238,11 @@ config.defaults.telescope = {
 				},
 			},
 		},
+		lvm_projects = {
+
+			scope_chdir = "win",
+		},
+
 		fzy_native = {
 			override_generic_sorter = true,
 			override_file_sorter = true,

@@ -11,10 +11,6 @@ local H = {}
 TelescopeModule.map_tele = require("lvm.modules.telescope.mappings")
 
 TelescopeModule.setup = function(config)
-	-- local lazy_config = require("lazy.core.config")
-
-	-- lazy_config.spec.modules:append("lvm.modules.telescope.plugins")
-
 	-- Setup config
 	config = H.setup_config(config)
 
@@ -22,6 +18,10 @@ TelescopeModule.setup = function(config)
 
 	-- Apply config
 	H.apply_config(config)
+
+	-- lvm.log:debug("registering lvm-telescope.nvim")
+  -- Export module
+  _G.LvmTelescope = TelescopeModule
 
 	lvm.register_module(TelescopeModule, spec)
 	return TelescopeModule

@@ -279,6 +279,9 @@ end
 function TelescopeApi.project_search(opts)
 	require("telescope").extensions.projects.projects({})
 end
+function TelescopeApi.project_search_lvm(opts)
+	require("telescope").extensions.lvm_projects.projects()
+end
 
 function TelescopeApi.project_search_simple()
 	require("telescope.builtin").find_files({
