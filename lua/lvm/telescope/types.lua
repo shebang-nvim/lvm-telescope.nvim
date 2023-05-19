@@ -1,0 +1,22 @@
+---@class Dictionary<T>: { [string]: T }
+---
+---@class LvmTelescopeModuleConfig
+---
+---@class TelescopeExtensionQueryToolsConfig
+---@field quiet boolean: disables all noise
+---
+---@class LvmTelescopeExtensionsConfig
+---@field query-tools TelescopeExtensionQueryToolsConfig
+---
+---@class LvmTelescopeConfig
+---
+---@alias telescope_mappings_config table {i: table, n: table}
+---@alias telescope_config table {mappings: table}
+---@class LvmTelescopeConfigRoot
+---@field telescope telescope_config
+---@field extensions LvmTelescopeExtensionsConfig
+---@field module LvmTelescopeModuleConfig
+---
+---
+---
+---@class LvmTelescopeConfigStore
